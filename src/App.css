@@ -1,0 +1,36 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* @layer base { */
+/* For Bold Font */
+/* @font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url("../src/assets/fonts/gilroy/Gilroy-Bold.ttf") format("ttf");
+  } */
+
+/* For SemiBold Font */
+/* @font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url("../src/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("ttf");
+  } */
+
+/* For Regular Font */
+/* @font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url("../src/assets/fonts/gilroy/Gilroy-Regular.ttf") format("ttf");
+  } */
+
+/* @font-face {
+    font-family: Gilroy;
+    font-weight: 600;
+    src: url("../src/assets/fonts/gilroy/Gilroy-Medium.ttf") format("ttf");
+  }
+
+  html {
+    font-family: "Gilroy", sans-serif;
+  }
+} */

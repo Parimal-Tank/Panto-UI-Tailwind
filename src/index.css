@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* For Bold Font */
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url("../src/assets/fonts/gilroy/Gilroy-Bold.ttf") format("ttf");
+  }
+
+  /* For SemiBold Font */
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url("../src/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("ttf");
+  }
+
+  /* For Regular Font */
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url("../src/assets/fonts/gilroy/Gilroy-Regular.ttf") format("ttf");
+  }
+
+  /* For Medium Font */
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 600;
+    src: url("../src/assets/fonts/gilroy/Gilroy-Medium.ttf") format("ttf");
+  }
+
+  html {
+    font-family: "Gilroy", sans-serif;
+  }
+}
+
+/* home main title   */
+.home-title-text {
+  @apply font-Gilroy font-extrabold text-[24px] leading-[30px] pb-[20px];
+}
+
+/* Home sub text  */
+.home-subtext {
+  @apply font-Gilroy font-medium text-[16px] leading-[30px] text-[#1E1E1E] max-w-[284px] max-h-[90px] pb-[14px] opacity-80;
+}
+
+/* more info text */
+.more-info-text {
+  @apply flex font-Gilroy font-semibold text-[14px] leading-[26px] text-[#E58411] pt-[14px] block;
+}
+
+/* Experience and Material Tile*/
+.text-titles-exe-mat {
+  @apply font-Gilroy text-[18px] leading-[21px] font-semibold uppercase tracking-[.175em] text-[#E58411] pb-[20px];
+}
+
+.text-sub-titles-exe-mat {
+  @apply font-Gilroy text-[42px] font-extrabold leading-[49px]  pt-[20] pb-[20px] capitalize;
+}
+
+.text-description {
+  @apply font-Gilroy text-[18px] leading-[33px] pb-[24px] opacity-80;
+}
+
+.product-select-tab-li {
+  @apply font-Gilroy font-medium text-[18px] opacity-80 text-[#1E1E1E] leading-[33px]  bg-transparent opacity-80 inline-block w-full p-4 text-gray-900 rounded-l-lg hover:bg-white hover:rounded-full focus:ring-4 focus:ring-blue-300  focus:outline-none dark:bg-gray-700 dark:text-white;
+}
+
+*{
+  -webkit-tap-highlight-color: transparent;
+}
