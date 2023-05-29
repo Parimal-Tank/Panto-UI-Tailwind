@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @layer base {
   /* For Bold Font */
@@ -31,8 +32,24 @@
     src: url("../src/assets/fonts/gilroy/Gilroy-Medium.ttf") format("ttf");
   }
 
+  /* Inter Fonts For Medium Font */
+  @font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url("../src/assets/fonts/gilroy/Inter-Medium.ttf") format("ttf");
+  }
+
+  /* Dm Sans Fonts For Medium Font */
+  @font-face {
+    font-family: DM Sans;
+    font-weight: 400;
+    src: url("../src/assets/fonts/gilroy/Inter-Medium.ttf") format("ttf");
+  }
+
   html {
     font-family: "Gilroy", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Dm", sans-serif;
   }
 }
 
@@ -65,9 +82,152 @@
 }
 
 .product-select-tab-li {
-  @apply font-Gilroy font-medium text-[18px] opacity-80 text-[#1E1E1E] leading-[33px]  bg-transparent opacity-80 inline-block w-full p-4 text-gray-900 rounded-l-lg hover:bg-white hover:rounded-full focus:ring-4 focus:ring-blue-300  focus:outline-none dark:bg-gray-700 dark:text-white;
+  @apply font-Gilroy font-medium text-[18px] opacity-80 text-[#1E1E1E] leading-[33px]  bg-transparent opacity-80 inline-block w-full p-4 text-gray-900 rounded-[32px] hover:bg-white hover:rounded-full focus:ring-4 focus:ring-blue-300  focus:outline-none dark:bg-gray-700 dark:text-white;
 }
 
-*{
+.footer-service {
+  @apply pt-[118px] flex flex-col;
+}
+
+.footer-services {
+  color: #f6973f;
+  padding-bottom: 20px;
+}
+
+.footer-services > li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.231818px;
+  color: #f6973f;
+  padding-left: 110px;
+}
+
+.f-service > li {
+  display: flex;
+  padding-bottom: 16px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+  opacity: 0.8;
+}
+
+.testimonial-slider {
+  .slick-slider {
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .slick-next {
+      display: block !important;
+      position: absolute;
+      right: 17px;
+      z-index: 1;
+
+      &::before {
+        content: url("../src/assets/images/SliderArraw.svg");
+        background-color: #fff;
+        border-radius: 50% !important;
+        padding: 12px !important;
+
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+      }
+    }
+
+    .slick-prev {
+      display: block !important;
+      position: absolute;
+      left: 17px;
+      z-index: 1;
+
+      &::before {
+        content: url("../src/assets/images/SliderArrawLeft.svg");
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 12px;
+
+        display: block;
+        position: absolute;
+        z-index: 1000;
+
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.product-slider {
+  .slick-slider {
+    .slick-list {
+      padding-top: 70px;
+      .slick-track {
+        .slick-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .slick-next {
+      display: block !important;
+      position: absolute;
+      right: 17px;
+      z-index: 1;
+
+      &::before {
+        content: url("../src/assets/images/SliderArraw.svg");
+        background-color: #fff;
+        border-radius: 50% !important;
+        padding: 12px !important;
+
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+      }
+    }
+
+    .slick-prev {
+      display: block !important;
+      position: absolute;
+      left: 17px;
+      z-index: 1;
+
+      &::before {
+        content: url("../src/assets/images/SliderArrawLeft.svg");
+        background-color: #fff;
+        border-radius: 50% !important;
+        padding: 12px !important;
+
+        display: block;
+        position: absolute;
+        z-index: 1000;
+
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+* {
   -webkit-tap-highlight-color: transparent;
 }

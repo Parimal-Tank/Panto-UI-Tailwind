@@ -11,6 +11,8 @@ module.exports = {
       },
       fontFamily: {
         Gilroy: ["Gilroy", "sans-serif"],
+        Inter: ['Inter , "sans-serif'],
+        Dm: ["DM", "sans-serif"],
       },
     },
 
@@ -34,5 +36,7 @@ module.exports = {
   plugins: [],
   fontFamily: {
     Gilroy: ["Gilroy", "sans-serif"],
+    Inter: ['Inter , "sans-serif'],
+    Dm: ["DM", "sans-serif"],
   },
 };

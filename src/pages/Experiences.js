@@ -5,7 +5,7 @@ import vetorArraw from "../assets/images/VectorArraw.svg";
 
 const Experiences = () => {
   return (
-    <div>
+    <div className="pt-[239px] pb-[240px]">
       <div className="grid grid-cols-2">
         <div>
           <img className="M1 img-fluid" src={M1} alt="" />
@@ -54,6 +54,7 @@ const Experiences = () => {
             <h4 className="text-description">
               Because panto was very serious about designing furniture for our
               environment, using a very expensive and famous capital but at a
+              <br />
               relatively low price
             </h4>
           </div>
