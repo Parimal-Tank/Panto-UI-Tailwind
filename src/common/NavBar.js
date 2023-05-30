@@ -1,6 +1,6 @@
 import React from "react";
 import bag from "../assets/images/Bag.png";
-import search from "../assets/images/Vector.svg";
+// import search from "../assets/images/Vector.svg";
 import arrow from "../assets/images/VectorArraw.svg";
 import furnitureImg from "../assets/images/Rectangle.png";
 
@@ -11,27 +11,26 @@ const NavBar = () => {
         className="min-h-[1084px]"
         style={{ background: `url(${furnitureImg}) no-repeat center/cover` }}
       >
-        <nav className=" border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav className=" border-gray-200 ">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4  ">
             <a href="#1" className="flex items-center">
-              <span class="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Panto
               </span>
             </a>
             <button
               data-collapse-toggle="navbar-dropdown"
               type="button"
-              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-dropdown"
               aria-expanded="false"
             >
-              <span class="sr-only">Open main menu</span>
+              <span className="sr-only">Open main menu</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 aria-hidden="true"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   fill-rule="evenodd"
@@ -44,8 +43,8 @@ const NavBar = () => {
               className="hidden w-full md:block md:w-auto"
               id="navbar-dropdown"
             >
-              <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
+              <ul className="flex flex-col font-medium   p-4 md:p-0 mt-4 mr-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li className="pr-[65px] md:pr-0">
                   <button
                     id="dropdownNavbarLink"
                     data-dropdown-toggle="dropdownNavbar"
@@ -53,11 +52,10 @@ const NavBar = () => {
                   >
                     Furniture{" "}
                     <svg
-                      class="w-5 h-5 ml-1"
+                      className="w-5 h-5 ml-1"
                       aria-hidden="true"
                       fill="currentColor"
                       viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         fill-rule="evenodd"
@@ -69,7 +67,7 @@ const NavBar = () => {
                   {/* <!-- Dropdown menu --> */}
                   <div
                     id="dropdownNavbar"
-                    class="z-10 hidden font-normal  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                    className="z-10 hidden font-normal  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                   >
                     <ul
                       className="bg-slate-600 py-2 text-sm text-gray-700 dark:text-gray-400"
@@ -100,7 +98,7 @@ const NavBar = () => {
                         </a>
                       </li>
                     </ul>
-                    <div class="py-1">
+                    <div className="py-1">
                       <a
                         href="#1"
                         className="text-white block px-4 py-2 text-sm text-gray-700 hover:bg-blue-600 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
@@ -110,16 +108,16 @@ const NavBar = () => {
                     </div>
                   </div>
                 </li>
-                <li>
+                <li className="pr-[65px] md:pr-0">
                   <a
                     href="#1"
-                    class="text-white block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent  md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                    className="text-white block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent  md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                     aria-current="page"
                   >
                     Shop
                   </a>
                 </li>
-                <li>
+                <li className="pr-[65px] md:pr-0">
                   <a
                     href="#1"
                     className="text-white block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -127,7 +125,7 @@ const NavBar = () => {
                     About Us
                   </a>
                 </li>
-                <li>
+                <li className="pr-[65px] md:pr-0">
                   <a
                     href="#1"
                     className="text-white block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -138,30 +136,30 @@ const NavBar = () => {
               </ul>
             </div>
 
-            <a href="#1" class="flex items-center relative">
+            <a href="#1" className="flex items-center relative">
               <img src={bag} className="" alt="Logo" />
-              <div class="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-orange-400 rounded-full -top-0 -right-1 dark:border-gray-900">
+              <div className="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-orange-400 rounded-full -top-0 -right-1 dark:border-gray-900">
                 0
               </div>
             </a>
           </div>
         </nav>
 
-        <div className="min-h-[500px] text-center pt-[84px] ">
-          <p className="text-white font-Gilroy font-extrabold text-7xl leading-[104px] ">
+        <div className="min-h-[500px] text-center pt-[84px]">
+          <p className="text-white font-Gilroy font-extrabold text-7xl leading-[104px] xs:text-2xl  sm:text-5xl md:text-6xl  lg:text-7xl  ">
             Make Your Interior More <br /> Minimalistic & Modern
           </p>
-          <p className="text-white font-Gilroy font-medium text-2xl leading-[38px] ">
+          <p className="text-white font-Gilroy font-medium text-2xl leading-[38px] xs:text-[12px] xs:leading-5 xs:pt-[50px] sm:text-[15px] sm:pt-[55px]  md:mt-[80px] lg:text-2xl">
             Turn your room with panto into a lot more minimalist <br /> and
             modern with ease and speed
           </p>
 
-          <form className="pt-[45px]">
-            <div class="flex justify-between max-w-[344px] min-h-[56px] m-auto bg-transparent border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full pl-3 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <form className="pt-[45px] md:pt-[65px] sm:pt-[75px]">
+            <div className="flex justify-between max-w-[344px] min-h-[56px] m-auto bg-transparent border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full pl-3 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 xs:max-w-[254px] lg:max-w-[344px]">
               <input
                 type="text"
                 id="voice-search"
-                class="bg-transparent text-white focus:outline-none placeholder:text-white w-full"
+                className="bg-transparent text-white focus:outline-none placeholder:text-white w-full"
                 placeholder="Search furniture"
                 required
               />
@@ -169,11 +167,11 @@ const NavBar = () => {
               <div className="bg-orange-400 rounded-[24px]">
                 <button
                   type="button"
-                  class="flex items-center justify-center pt-2 pl-3"
+                  className="flex items-center justify-center pt-2 pl-3"
                 >
                   <svg
                     aria-hidden="true"
-                    class="w-5 h-5 mr-2 -ml-1 text-white  rounded-[24px]"
+                    className="w-5 h-5 mr-2 -ml-1 text-white  rounded-[24px]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -192,44 +190,44 @@ const NavBar = () => {
         </div>
       </section>
 
-      <div className="grid grid-cols-4 pt-[120px] pb-[120px] grid-cols-2">
+      <div className="grid grid-cols-4 pt-[120px] pb-[120px] md:grid-cols-2 xs:pt-[60px] xs:grid-cols-1  sm:grid-cols-2 sm:p-4 sm:gap-6  md:pl-[30px]  md:gap-[35px] lg:grid-cols-4 lg:pl-[15px] ">
         <div className="">
-          <h3 className="font-Gilroy font-extrabold text-[42px] pl-[15px] leading-[49px] ">
+          <h3 className="font-Gilroy font-extrabold text-[42px] pl-[15px] leading-[49px] xs:text-center lg:pt-[50px] sm:pt-[50px]">
             Why <br /> Choosing Us
           </h3>
         </div>
 
-        <div className="pr-[28px] flex flex-col justify-center">
-          <h3 className="home-title-text">Luxury facilities</h3>
-          <p className="home-subtext">
+        <div className="pr-[28px] flex flex-col justify-center sm:pr-0 lg:pr-0 xs:pr-0 xs:text-center xs:mt-8 xs:m-auto ">
+          <h3 className="home-title-text lg:pt-[20px]">Luxury facilities</h3>
+          <p className="home-subtext xs:max-w-[295px]">
             The advantage of hiring a workspace with us is that givees you
             comfortable service and all-around facilities.
           </p>
-          <h2 className="more-info-text">
+          <h2 className="more-info-text xs:flex xs:flex-row xs:justify-center lg:pt-[50px]">
             More Info
             <img className="pl-[13px]" src={arrow} alt="more"></img>
           </h2>
         </div>
 
-        <div className="pr-[28px]">
+        <div className="pr-[28px] xs:pr-0 xs:text-center xs:mt-8 xs:m-auto xs:pt-[20px]">
           <h3 className="home-title-text">Affordable Price</h3>
-          <p className="home-subtext">
+          <p className="home-subtext xs:max-w-[295px]">
             You can get a workspace of the highst quality at an affordable price
             and still enjoy the facilities that are oly here.
           </p>
-          <h2 className="more-info-text">
+          <h2 className="more-info-text xs:flex xs:flex-row xs:justify-center xs:pt-[5px] sm:pt-[50px] lg:pt-[50px]">
             More Info
             <img className="pl-[13px]" src={arrow} alt="more"></img>
           </h2>
         </div>
 
-        <div className="pr-[28px]">
-          <h3 className="home-title-text">Many Choices</h3>
-          <p className="home-subtext">
+        <div className="pr-[28px] sm:pr-0 xs:pr-0 xs:text-center xs:m-auto xs:pt-[25px] ">
+          <h3 className="home-title-text xs:pt-6">Many Choices</h3>
+          <p className="home-subtext xs:max-w-[295px]">
             We provide many unique work space choices so that you can choose the
             workspace to your liking.
           </p>
-          <h2 className="more-info-text">
+          <h2 className="more-info-text xs:flex xs:flex-row xs:justify-center xs:pt-[5px] sm:pt-[50px] lg:pt-[50px]">
             More Info
             <img className="pl-[13px]" src={arrow} alt="more"></img>
           </h2>

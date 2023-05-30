@@ -98,13 +98,13 @@ const Testimonial = () => {
                   style={{
                     background: `url(${data.backimage}) no-repeat center/cover`,
                   }}
-                  class="flex items-end w-[370px] h-[506px] rounded-[18px] mt-0 m-auto  max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
+                  className="flex items-end w-[370px] h-[506px] rounded-[18px] mt-0 m-auto  max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700"
                 >
-                  <div className="flex flex-col items-center justify-center w-[95%] h-[206px] m-auto mb-[22px] bg-white  text-center ">
+                  <div className="flex flex-col items-center justify-center w-[95%] h-[206px] m-auto mb-[22px] bg-white  text-center rounded-[10px]">
                     <img
                       className="w-[50px] h-[50px] inline-block rounded-[50%] mt-[-19px] border border-[6px]
                     border-white "
-                      alt="Card image cap"
+                      alt="Card  cap"
                       src={data.userimg}
                     />
                     <div>
@@ -120,10 +120,10 @@ const Testimonial = () => {
                         {data.testimonial}
                       </p>
 
-                      <div class="flex items-center justify-center mt-2.5 mb-5">
+                      <div className="flex items-center justify-center mt-2.5 mb-5">
                         <svg
                           aria-hidden="true"
-                          class="w-5 h-5 text-yellow-500"
+                          className="w-5 h-5 text-yellow-500"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -132,7 +132,7 @@ const Testimonial = () => {
                         </svg>
                         <svg
                           aria-hidden="true"
-                          class="w-5 h-5 text-yellow-500"
+                          className="w-5 h-5 text-yellow-500"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -141,7 +141,7 @@ const Testimonial = () => {
                         </svg>
                         <svg
                           aria-hidden="true"
-                          class="w-5 h-5 text-yellow-500"
+                          className="w-5 h-5 text-yellow-500"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -150,7 +150,7 @@ const Testimonial = () => {
                         </svg>
                         <svg
                           aria-hidden="true"
-                          class="w-5 h-5 text-yellow-500"
+                          className="w-5 h-5 text-yellow-500"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -159,7 +159,7 @@ const Testimonial = () => {
                         </svg>
                         <svg
                           aria-hidden="true"
-                          class="w-5 h-5 text-yellow-500"
+                          className="w-5 h-5 text-yellow-500"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >

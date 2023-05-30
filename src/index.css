@@ -65,7 +65,7 @@
 
 /* more info text */
 .more-info-text {
-  @apply flex font-Gilroy font-semibold text-[14px] leading-[26px] text-[#E58411] pt-[14px] block;
+  @apply flex font-Gilroy font-semibold text-[14px] leading-[26px] text-[#E58411] pt-[14px] block   xl:pt-[25px] sm:pt-[60px];
 }
 
 /* Experience and Material Tile*/
@@ -226,6 +226,12 @@
       }
     }
   }
+}
+
+.active-tab {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 32px;
 }
 
 * {
