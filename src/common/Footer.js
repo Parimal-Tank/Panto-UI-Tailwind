@@ -17,7 +17,7 @@ const Footer = () => {
           </h3>
         </div>
 
-        <div className="pl-[152px]  xs:pl-[120px] sm:pl-[200px] lg:pl-[100px]">
+        <div className="pl-[152px]  xs:pl-[120px] sm:pl-[150px] lg:pl-[100px]">
           <ul className="footer-service">
             <li className="footer-services">Service</li>
             <div className="f-service">
@@ -28,7 +28,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className=" pl-[120px] sm:pl-[200px] lg:pl-[100px]">
+        <div className=" pl-[120px] sm:pl-[110px] lg:pl-[100px]">
           <ul className="footer-service">
             <li className="footer-services">Furniture</li>
             <div className="f-service">
@@ -39,7 +39,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className=" pl-[110px] sm:pl-[200px] lg:pl-[100px]">
+        <div className=" pl-[110px] sm:pl-[140px] lg:pl-[100px]">
           <ul className="footer-service">
             <li className="footer-services">Follow Us</li>
             <div className="f-service">
